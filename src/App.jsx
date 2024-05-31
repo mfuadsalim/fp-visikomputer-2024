@@ -18,6 +18,7 @@ function App() {
       <Modal open={!gestureRecognizer} onClose={null}>
         <div className="flex justify-center items-center p-4">
           <p>Please wait for the MediaPipe task to load ...</p>
+          <p>Testing</p>
         </div>
       </Modal>
 
