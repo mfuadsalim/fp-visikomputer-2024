@@ -18,7 +18,7 @@ function Question({ setGameState, gameState }) {
   }, [gameState.isCorrect]);
 
   const generateQuestion = () => {
-    const operations = ['+', '-', '*', '/'];
+    const operations = ['+', '-', '×', '/'];
     const operation = operations[Math.floor(Math.random() * operations.length)];
     let num1, num2, answer;
     switch (operation) {
@@ -32,7 +32,7 @@ function Question({ setGameState, gameState }) {
         num2 = Math.floor(Math.random() * num1);
         answer = num1 - num2;
         break;
-      case '*':
+      case '×':
         num1 = Math.floor(Math.random() * 10) + 1;
         num2 = Math.floor(Math.random() * 10) + 1;
         answer = num1 * num2;
@@ -56,14 +56,14 @@ function Question({ setGameState, gameState }) {
     }));
   };
 
-  let userAnswerTextClass = "text-7xl font-bold text-center ";
+  let userAnswerTextClass = "font-[Caprasimo] text-[#160041] text-7xl text-center ";
   userAnswerTextClass += gameState.userAnswer === '...' ? 'text-black' : (gameState.isCorrect ? 'text-green-500' : 'text-red-500 vibrate');
 
   return (
     <div className="flex flex-col items-center">
       <div className="flex flex-row">
-        <h1 className="text-7xl font-bold text-center">{gameState.question}</h1>
-        <h1 className="text-7xl font-bold text-center mx-6">=</h1>
+        <h1 className="font-[Caprasimo] text-[#160041] text-7xl text-center">{gameState.question}</h1>
+        <h1 className="font-[Caprasimo] text-[#160041] text-7xl text-center mx-6">=</h1>
         <h1 className={userAnswerTextClass}>{gameState.userAnswer}</h1>
       </div>
     </div>
