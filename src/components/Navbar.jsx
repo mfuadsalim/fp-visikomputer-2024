@@ -2,9 +2,9 @@
 const Navbar = () => {
   return (
     <div>
-      <nav className='fixed w-full flex justify-between px-10 py-6 backdrop-blur-sm bg-white bg-opacity-15 z-10 top-0'>
+      <nav className='fixed w-full flex justify-between items-center px-10 py-4 backdrop-blur-sm bg-white bg-opacity-15 z-10 top-0'>
         <div>
-          <img src="logo.png" alt="Logo Kelompok 2 " className='scale-75'/>
+          <img src="logo.png" alt="Logo Kelompok 2 " className='w-20'/>
         </div>
             <div>
               <ul className='flex gap-8 px-4'>

@@ -4,7 +4,8 @@ function HomeSection() {
     return (
       <section id='home' className='w-full h-screen scroll-mt-16 flex justify-center items-center'>
         <div className='w-full'>
-          <p className='font-[Caprasimo] text-[40px] text-[#160041] text-center'>Matematika Mudah dengan <br /> Cara Sederhana!</p>
+          <p className='font-[Caprasimo] text-5xl text-[#160041] text-center'>MATHGIC HANDS</p>
+          <p className='font-[Caprasimo] text-xl text-[#160041] text-center'>Matematika mudah dengan cara sederhana</p>
           <div className='flex justify-between gap-16 my-10 px-32'>
             <img src="home-girl.png" alt="Foto Anak Perempuan" className='w-64 h-fit' />
             <div className='flex flex-col gap-12'>
